@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronDown, ChevronRight, Home, Settings, Book, Code, Database, Shield, Webhook, Users, Tag, Package, GraduationCap, Video, CheckSquare, ExternalLink, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -10,6 +9,7 @@ interface SidebarItem {
   icon?: React.ComponentType<any>;
   children?: SidebarItem[];
   href?: string;
+  className?: string;
 }
 
 const sidebarItems: SidebarItem[] = [
@@ -18,7 +18,7 @@ const sidebarItems: SidebarItem[] = [
     title: "🏠 Visão Geral",
     href: "/overview"
   },
-   {
+  {
     id: "cadastro-login",
     title: "📝 Cadastro e Login",
     href: "/docs/tutorials/cadastro-login"
@@ -145,25 +145,12 @@ const sidebarItems: SidebarItem[] = [
   },
   {
     id: "tutoriaisExternos",
-    title: "Tutoriais Externos",
-    icon: GraduationCap,
-    href: "/tutoriaisExternos"
+    title: "Ir para a Carrinho",
+    icon: ExternalLink,
+    href: "https://carrinhodigital.com",
+    className: "text-blue-500 hover:text-blue-600"
   }
 ];
-function renderSidebarItem(item: SidebarItem, level: number = 0) {
-   const hasChildren = item.children && item.children.length > 0;
-   const isExpanded = false;
-   const isActive = false;
-   const Icon = item.icon;
-   return (
-        React.createElement("div", { key: item.id },
-           React.createElement("button", { onClick: () => {
-                   }, className: "w-full flex items-center justify-between py-2 px-3 text-left text-sm rounded-md transition-colors hover:bg-accent min-w-0", style: { paddingLeft: `${12 + level * 16}px` } },
-               React.createElement("div", { className: "flex items-center space-x-2 min-w-0 flex-1" },
-                   Icon && React.createElement(Icon, { className: "h-4 w-4 flex-shrink-0" }),
-                   React.createElement("span", { className: "truncate" }, item.title)))));
-}
-
 interface SidebarProps {
   activeItem: string;
   onItemClick: (id: string, href?: string) => void;
@@ -185,7 +172,10 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
   };
 
   const handleItemClick = (id: string, href?: string) => {
-    console.log("Sidebar item clicked:", id);
+    if (id === "tutoriaisExternos" && href) {
+      window.open(href, '_blank');
+      return;
+    }
     onItemClick(id, href);
     // Close sidebar on mobile after selection
     if (window.innerWidth < 768) {
@@ -214,7 +204,8 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
             level > 0 && "ml-4",
             level > 1 && "ml-8",
             isActive && "bg-doc-blue text-white hover:bg-doc-blue/90",
-            !isActive && "text-foreground hover:text-accent-foreground"
+            !isActive && "text-foreground hover:text-accent-foreground",
+            item.className
           )}
           style={{ paddingLeft: `${12 + level * 16}px` }}
         >
@@ -250,12 +241,12 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
     <>
       {/* Mobile Overlay */}
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 z-40 md:hidden"
           onClick={onClose}
         />
       )}
-      
+
       {/* Sidebar */}
       <aside className={cn(
         "fixed md:relative inset-y-0 left-0 z-40 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0 overflow-hidden",

@@ -3,23 +3,48 @@ import React from "react";
 const VendasPt1Page = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold mb-4">💰 Vendas - parte 1</h1>
+      <h1 className="text-4xl font-bold mb-6">💰 Vendas - parte 1</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
-      <h3 className="text-2xl font-bold mb-4">Passo 1 - Introdução</h3>
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        Entenda os conceitos básicos de vendas na plataforma Carrinho Digital e como iniciar suas operações.
+      <p className="text-lg text-muted-foreground mb-8">
+        Acompanhe suas vendas e entre em contato com os clientes diretamente pelo WhatsApp.
       </p>
-      <h3 className="text-xl font-semibold mb-3">📌 Por que é importante?</h3>
-      <p className="mb-6 text-gray-800 leading-relaxed">
-        Compreender o processo de vendas é fundamental para o sucesso do seu negócio.
-      </p>
-      <h3 className="text-xl font-semibold mb-3">🎯 O que você vai aprender?</h3>
-      <ul className="list-disc list-inside mb-8 text-gray-800">
-        <li>Introdução às vendas</li>
-        <li>Configuração inicial</li>
-        <li>Primeiros passos</li>
-      </ul>
-      <h2 className="text-lg font-semibold text-gray-700 mb-6">📺 Vídeo Aula</h2>
+
+      <div className="space-y-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Visualização de Vendas</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">📊 Tabela de Vendas</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Lista de todas as vendas realizadas</li>
+                <li>Dados do cliente</li>
+                <li>Valor da venda</li>
+                <li>Status do pedido</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">💬 Contato Rápido</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Ícone do WhatsApp em cada venda</li>
+                <li>Clique para abrir conversa direta</li>
+                <li>Contato instantâneo com o cliente</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Mantenha o WhatsApp atualizado</li>
+            <li>Responda os clientes rapidamente</li>
+            <li>Acompanhe o status das vendas</li>
+          </ul>
+        </section>
+      </div>
+
+      <h2 className="text-lg font-semibold text-gray-700 mb-6 mt-8">📺 Vídeo Aula</h2>
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"

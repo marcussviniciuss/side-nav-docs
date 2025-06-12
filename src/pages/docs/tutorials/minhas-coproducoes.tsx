@@ -3,23 +3,60 @@ import React from "react";
 const MinhasCoproducoesPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold mb-4">🤝 Minhas co-produções (Visão co-produtor)</h1>
+      <h1 className="text-4xl font-bold mb-6">🤝 Minhas co-produções</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
-      <h3 className="text-2xl font-bold mb-4">Passo 1 - Introdução</h3>
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        Saiba como gerenciar suas co-produções na plataforma Carrinho Digital, colaborando com produtores para maximizar resultados.
+      <p className="text-lg text-muted-foreground mb-8">
+        Gerencie suas co-produções na plataforma Carrinho Digital.
       </p>
-      <h3 className="text-xl font-semibold mb-3">📌 Por que é importante?</h3>
-      <p className="mb-6 text-gray-800 leading-relaxed">
-        Gerenciar co-produções de forma eficiente fortalece parcerias e aumenta o sucesso conjunto.
-      </p>
-      <h3 className="text-xl font-semibold mb-3">🎯 O que você vai aprender?</h3>
-      <ul className="list-disc list-inside mb-8 text-gray-800">
-        <li>Visualização de co-produções</li>
-        <li>Gestão de permissões</li>
-        <li>Colaboração e comunicação</li>
-      </ul>
-      <h2 className="text-lg font-semibold text-gray-700 mb-6">📺 Vídeo Aula</h2>
+
+      <div className="space-y-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Gerenciando Co-produções</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">✅ Aceitação</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Receba convite via email</li>
+                <li>Revise os detalhes da co-produção</li>
+                <li>Aceite o convite para iniciar</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">🔄 Cancelamento</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Você pode cancelar a qualquer momento</li>
+                <li>Cancelamento é definitivo</li>
+                <li>Notifique o produtor principal</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Compartilhamento</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-lg font-medium mb-2">🔗 Link de Venda</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Copie o link quando a co-produção estiver ativa</li>
+                <li>Compartilhe com sua audiência</li>
+                <li>Monitore as vendas realizadas</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Mantenha o link atualizado</li>
+            <li>Monitore o desempenho das vendas</li>
+          </ul>
+        </section>
+      </div>
+
+      <h2 className="text-lg font-semibold text-gray-700 mb-6 mt-8">📺 Vídeo Aula</h2>
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"

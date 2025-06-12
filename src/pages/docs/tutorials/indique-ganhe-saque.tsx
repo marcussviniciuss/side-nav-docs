@@ -3,23 +3,72 @@ import React from "react";
 const IndiqueGanheSaquePage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold mb-4">💰 Indique e Ganhe (Saque)</h1>
+      <h1 className="text-4xl font-bold mb-6">💰 Indique e Ganhe (Saque)</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
-      <h3 className="text-2xl font-bold mb-4">Passo 1 - Introdução</h3>
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        Saiba como gerenciar os saques do programa Indique e Ganhe na plataforma Carrinho Digital para garantir pagamentos corretos.
+      <p className="text-lg text-muted-foreground mb-8">
+        Saque suas comissões do programa Indique e Ganhe na plataforma Carrinho Digital.
       </p>
-      <h3 className="text-xl font-semibold mb-3">📌 Por que é importante?</h3>
-      <p className="mb-6 text-gray-800 leading-relaxed">
-        Uma boa gestão dos saques assegura a confiança dos participantes e a transparência do programa.
-      </p>
-      <h3 className="text-xl font-semibold mb-3">🎯 O que você vai aprender?</h3>
-      <ul className="list-disc list-inside mb-8 text-gray-800">
-        <li>Processo de saque</li>
-        <li>Controle financeiro</li>
-        <li>Relatórios e auditoria</li>
-      </ul>
-      <h2 className="text-lg font-semibold text-gray-700 mb-6">📺 Vídeo Aula</h2>
+
+      <div className="space-y-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Solicitar Saque</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">💵 Requisitos</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Valor mínimo de R$ 50,00</li>
+                <li>Saldo disponível suficiente</li>
+                <li>Dados bancários atualizados</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">📊 Comissões</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Visualize comissões disponíveis</li>
+                <li>Histórico de comissões geradas</li>
+                <li>Status dos pagamentos</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Processo de Saque</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">📱 Passo a Passo</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Verifique saldo disponível</li>
+                <li>Confirme valor mínimo (R$ 50,00)</li>
+                <li>Selecione valor do saque</li>
+                <li>Confirme dados bancários</li>
+                <li>Solicite o saque</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">⏱️ Prazos</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Processamento do saque</li>
+                <li>Prazo de recebimento</li>
+                <li>Confirmação de pagamento</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Aguarde acumular o valor mínimo</li>
+            <li>Mantenha dados bancários atualizados</li>
+            <li>Acompanhe o status do saque</li>
+          </ul>
+        </section>
+      </div>
+
+      <h2 className="text-lg font-semibold text-gray-700 mb-6 mt-8">📺 Vídeo Aula</h2>
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"

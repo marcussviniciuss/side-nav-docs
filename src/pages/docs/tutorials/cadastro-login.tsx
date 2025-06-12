@@ -3,23 +3,58 @@ import React from "react";
 const CadastroLoginPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold mb-4">📝 Cadastro e Login</h1>
+      <h1 className="text-4xl font-bold mb-6">📝 Cadastro e Login</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
-      <h3 className="text-2xl font-bold mb-4">Passo 1 - Introdução</h3>
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        Saiba como criar uma conta na plataforma Carrinho Digital, acessar com suas credenciais e entender os primeiros passos após o login.
+      <p className="text-lg text-muted-foreground mb-8">
+        Aprenda como criar sua conta e acessar a plataforma Carrinho Digital.
       </p>
-      <h3 className="text-xl font-semibold mb-3">📌 Por que é importante?</h3>
-      <p className="mb-6 text-gray-800 leading-relaxed">
-        Ter um cadastro correto e seguro é fundamental para garantir a melhor experiência na plataforma, além de permitir o acesso a todas as funcionalidades disponíveis.
-      </p>
-      <h3 className="text-xl font-semibold mb-3">🎯 O que você vai aprender?</h3>
-      <ul className="list-disc list-inside mb-8 text-gray-800">
-        <li>Como criar uma conta na plataforma</li>
-        <li>Como acessar com suas credenciais</li>
-        <li>Entender os primeiros passos após o login</li>
-        <li>Dicas para manter sua conta segura</li>
-      </ul>
+      <div className="space-y-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Tipos de Conta</h2>
+          <p className="mb-4">
+            A plataforma oferece dois tipos de cadastro:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Pessoa Física:</strong> Ideal para produtores individuais</li>
+            <li><strong>Pessoa Jurídica:</strong> Para empresas e CNPJs</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Requisitos para Cadastro</h2>
+          <p className="mb-4">
+            Para criar sua conta, você precisará fornecer as seguintes informações:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Nome completo</strong> (obrigatório)</li>
+            <li><strong>E-mail</strong> válido (obrigatório)</li>
+            <li><strong>Senha</strong> com no mínimo 8 caracteres (obrigatório)</li>
+            <li><strong>CPF</strong> (para Pessoa Física)</li>
+            <li><strong>CNPJ</strong> (para Pessoa Jurídica)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Processo de Cadastro</h2>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Acesse a página inicial do Carrinho Digital</li>
+            <li>Clique no botão "Criar Conta"</li>
+            <li>Selecione o tipo de conta (Pessoa Física ou Jurídica)</li>
+            <li>Preencha todos os campos obrigatórios</li>
+            <li>Faça seu primeiro login</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Dicas de Segurança</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Use uma senha forte, combinando letras, números e caracteres especiais</li>
+            <li>Nunca compartilhe suas credenciais de acesso</li>
+            <li>Mantenha seu e-mail de cadastro atualizado</li>
+          </ul>
+        </section>
+      </div>
+
       <h2 className="text-lg font-semibold text-gray-700 mb-6">📺 Vídeo Aula</h2>
       <div className="w-full max-w-4xl aspect-video">
         <iframe

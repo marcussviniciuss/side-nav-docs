@@ -3,23 +3,75 @@ import React from "react";
 const WebhooksLogsPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold mb-4">🔗 Webhooks + Logs</h1>
+      <h1 className="text-4xl font-bold mb-6">🔗 Webhooks + Logs</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
-      <h3 className="text-2xl font-bold mb-4">Passo 1 - Introdução</h3>
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        Saiba como configurar webhooks e monitorar logs na plataforma Carrinho Digital para integrar e acompanhar eventos.
+      <p className="text-lg text-muted-foreground mb-8">
+        Configure webhooks e monitore logs para integrar e acompanhar eventos na plataforma Carrinho Digital.
       </p>
-      <h3 className="text-xl font-semibold mb-3">📌 Por que é importante?</h3>
-      <p className="mb-6 text-gray-800 leading-relaxed">
-        Webhooks e logs permitem automação e monitoramento eficiente, garantindo a integração correta dos sistemas.
-      </p>
-      <h3 className="text-xl font-semibold mb-3">🎯 O que você vai aprender?</h3>
-      <ul className="list-disc list-inside mb-8 text-gray-800">
-        <li>Como configurar webhooks</li>
-        <li>Monitoramento e análise de logs</li>
-        <li>Resolução de problemas e alertas</li>
-      </ul>
-      <h2 className="text-lg font-semibold text-gray-700 mb-6">📺 Vídeo Aula</h2>
+
+      <div className="space-y-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Cadastro de Webhooks</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">🔧 Configuração</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>URL do endpoint para receber eventos</li>
+                <li>Eventos disponíveis para monitoramento</li>
+                <li>Chave de segurança para autenticação</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">📡 Eventos Disponíveis</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Novas vendas</li>
+                <li>Atualizações de status</li>
+                <li>Pagamentos recebidos</li>
+                <li>Cancelamentos</li>
+                <li>Assinaturas</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Monitoramento de Logs</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">📊 Visualização</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Histórico de eventos enviados</li>
+                <li>Status de entrega (sucesso/erro)</li>
+                <li>Resposta do servidor</li>
+                <li>Data e hora do evento</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-2">⚠️ Alertas</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-800">
+                <li>Falhas na entrega</li>
+                <li>Erros de autenticação</li>
+                <li>Timeout nas requisições</li>
+                <li>Notificações por email</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Mantenha a URL do webhook sempre acessível</li>
+            <li>Configure retry em caso de falhas</li>
+            <li>Monitore regularmente os logs</li>
+            <li>Teste o webhook antes de usar em produção</li>
+          </ul>
+        </section>
+      </div>
+
+      <h2 className="text-lg font-semibold text-gray-700 mb-6 mt-8">📺 Vídeo Aula</h2>
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
