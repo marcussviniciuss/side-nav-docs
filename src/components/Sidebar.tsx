@@ -137,7 +137,7 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
             }
           }}
           className={cn(
-            "w-full flex items-center justify-between py-2 px-3 text-left text-sm rounded-md transition-colors hover:bg-accent",
+            "w-full flex items-center justify-between py-2 px-3 text-left text-sm rounded-md transition-colors hover:bg-accent min-w-0",
             level > 0 && "ml-4",
             level > 1 && "ml-8",
             isActive && "bg-doc-blue text-white hover:bg-doc-blue/90",
@@ -145,7 +145,7 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
           )}
           style={{ paddingLeft: `${12 + level * 16}px` }}
         >
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 min-w-0 flex-1">
             {Icon && <Icon className="h-4 w-4 flex-shrink-0" />}
             <span className={cn(
               "truncate",
@@ -185,7 +185,7 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
       
       {/* Sidebar */}
       <aside className={cn(
-        "fixed md:relative inset-y-0 left-0 z-50 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0",
+        "fixed md:relative inset-y-0 left-0 z-50 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0 overflow-hidden",
         isOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="flex items-center justify-between p-4 border-b md:hidden">
