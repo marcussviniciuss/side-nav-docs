@@ -145,7 +145,7 @@ const sidebarItems: SidebarItem[] = [
   },
   {
     id: "tutoriaisExternos",
-    title: "Ir para a Carrinho",
+    title: "Ir para a Carrinho Digital",
     icon: ExternalLink,
     href: "https://carrinhodigital.com",
     className: "text-blue-500 hover:text-blue-600"
