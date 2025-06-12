@@ -15,82 +15,154 @@ interface SidebarItem {
 const sidebarItems: SidebarItem[] = [
   {
     id: "overview",
-    title: "Overview",
-    icon: Home,
+    title: "🏠 Visão Geral",
     href: "/overview"
   },
-  {
-    id: "paradigm",
-    title: "Paradigm",
-    icon: Book,
-    children: [
-      {
-        id: "logical-model",
-        title: "Logical model",
-        children: [
-          { id: "domain-logic", title: "Domain logic", href: "/domain-logic" },
-          { id: "properties", title: "Properties", href: "/properties" },
-          { id: "actions", title: "Actions", href: "/actions" },
-          { id: "events", title: "Events", href: "/events" },
-          { id: "constraints", title: "Constraints", href: "/constraints" },
-          { id: "view-logic", title: "View logic", href: "/view-logic" }
-        ]
-      },
-      { id: "physical-model", title: "Physical model", href: "/physical-model" },
-      { id: "language", title: "Language", href: "/language" }
-    ]
+   {
+    id: "cadastro-login",
+    title: "📝 Cadastro e Login",
+    href: "/docs/tutorials/cadastro-login"
   },
   {
-    id: "ide",
-    title: "IDE",
-    icon: Code,
-    href: "/ide"
+    id: "perfil-usuario",
+    title: "👤 Perfil de Usuário",
+    href: "/docs/tutorials/perfil-usuario"
   },
   {
-    id: "configuracoes",
-    title: "CONFIGURAÇÕES",
-    icon: Settings,
-    children: [
-      { id: "termo-aceite", title: "Termo de Aceite", href: "/termo-aceite" },
-      { id: "webhooks", title: "Webhooks", icon: Webhook, href: "/webhooks" },
-      {
-        id: "api",
-        title: "API",
-        icon: Database,
-        children: [
-          { id: "usuario", title: "Usuário", href: "/api/usuario" },
-          { id: "tag", title: "Tag", icon: Tag, href: "/api/tag" },
-          { id: "produto", title: "Produto", icon: Package, href: "/api/produto" },
-          { id: "aula", title: "Aula", href: "/api/aula" },
-          { id: "entrega", title: "Entrega", href: "/api/entrega" }
-        ]
-      },
-      { id: "elementor-forms", title: "Elementor Forms Carrinho Digital", href: "/elementor-forms" }
-    ]
+    id: "criando-produto",
+    title: "📦 Criando um Produto",
+    href: "/docs/tutorials/criando-produto"
   },
   {
-    id: "suporte",
-    title: "SUPORTE",
-    icon: Shield,
-    children: [
-      { id: "checklist-suporte", title: "Checklist do Suporte", icon: CheckSquare, href: "/checklist-suporte" },
-      { id: "checklist-lancamento", title: "Checklist de Lançamento", icon: CheckSquare, href: "/checklist-lancamento" },
-      { id: "checklist-imagens", title: "Checklist de Imagens", icon: CheckSquare, href: "/checklist-imagens" },
-      { id: "criando-aluno", title: "Criando um aluno manualmente", icon: Users, href: "/criando-aluno" }
-    ]
+    id: "oferta",
+    title: "🎁 Oferta",
+    href: "/docs/tutorials/oferta"
   },
   {
-    id: "tutoriais",
-    title: "TUTORIAIS EXTERNOS",
+    id: "assinatura-checkout",
+    title: "🛒 Assinatura + Checkout",
+    href: "/docs/tutorials/assinatura-checkout"
+  },
+  {
+    id: "descontos",
+    title: "💸 Descontos",
+    href: "/docs/tutorials/descontos"
+  },
+  {
+    id: "pixels",
+    title: "📡 Pixels",
+    href: "/docs/tutorials/pixels"
+  },
+  {
+    id: "orderbump",
+    title: "🎯 OrderBump",
+    href: "/docs/tutorials/orderbump"
+  },
+  {
+    id: "review",
+    title: "⭐ Review",
+    href: "/docs/tutorials/review"
+  },
+  {
+    id: "review-checkout",
+    title: "🛒 Review no checkout",
+    href: "/docs/tutorials/review-checkout"
+  },
+  {
+    id: "convite-coprodutor",
+    title: "🤝 Convite co-produtor (Visão produtor)",
+    href: "/docs/tutorials/convite-coprodutor"
+  },
+  {
+    id: "minhas-coproducoes",
+    title: "🤝 Minhas co-produções (Visão co-produtor)",
+    href: "/docs/tutorials/minhas-coproducoes"
+  },
+  {
+    id: "vendas-pt1",
+    title: "💰 Vendas - parte 1",
+    href: "/docs/tutorials/vendas-pt1"
+  },
+  {
+    id: "vendas-pt2",
+    title: "💰 Vendas - parte 2",
+    href: "/docs/tutorials/vendas-pt2"
+  },
+  {
+    id: "vendas-pt3",
+    title: "💰 Vendas - parte 3",
+    href: "/docs/tutorials/vendas-pt3"
+  },
+  {
+    id: "vendas-pt4",
+    title: "💰 Vendas - parte 4",
+    href: "/docs/tutorials/vendas-pt4"
+  },
+  {
+    id: "recuperacao-assinaturas",
+    title: "🔄 Recuperação e Assinaturas",
+    href: "/docs/tutorials/recuperacao-assinaturas"
+  },
+  {
+    id: "financas-saque",
+    title: "💵 Finanças (Saque)",
+    href: "/docs/tutorials/financas-saque"
+  },
+  {
+    id: "indique-ganhe",
+    title: "🎁 Indique e Ganhe",
+    href: "/docs/tutorials/indique-ganhe"
+  },
+  {
+    id: "indique-ganhe-saque",
+    title: "💰 Indique e Ganhe (Saque)",
+    href: "/docs/tutorials/indique-ganhe-saque"
+  },
+  {
+    id: "webhooks-logs",
+    title: "🔗 Webhooks + Logs",
+    href: "/docs/tutorials/webhooks-logs"
+  },
+  {
+    id: "assistente",
+    title: "🧑‍💻 Assistente",
+    href: "/docs/tutorials/assistente"
+  },
+  {
+    id: "dashboard",
+    title: "📊 Dashboard",
+    href: "/docs/tutorials/dashboard"
+  },
+  {
+    id: "lojas",
+    title: "🏬 Lojas",
+    href: "/docs/tutorials/lojas"
+  },
+  {
+    id: "header",
+    title: "🧩 Header",
+    href: "/docs/tutorials/header"
+  },
+  {
+    id: "tutoriaisExternos",
+    title: "Tutoriais Externos",
     icon: GraduationCap,
-    children: [
-      { id: "nutror-eduzz", title: "Desativando o Nutror ou Alumy na Eduzz", icon: ExternalLink, href: "/nutror-eduzz" },
-      { id: "hotmart-club", title: "Desativando o Hotmart Club", icon: ExternalLink, href: "/hotmart-club" },
-      { id: "vimeo", title: "Vimeo", icon: Video, href: "/vimeo" },
-      { id: "hotmart-player", title: "Hotmart Player", icon: Video, href: "/hotmart-player" }
-    ]
+    href: "/tutoriaisExternos"
   }
 ];
+function renderSidebarItem(item: SidebarItem, level: number = 0) {
+   const hasChildren = item.children && item.children.length > 0;
+   const isExpanded = false;
+   const isActive = false;
+   const Icon = item.icon;
+   return (
+        React.createElement("div", { key: item.id },
+           React.createElement("button", { onClick: () => {
+                   }, className: "w-full flex items-center justify-between py-2 px-3 text-left text-sm rounded-md transition-colors hover:bg-accent min-w-0", style: { paddingLeft: `${12 + level * 16}px` } },
+               React.createElement("div", { className: "flex items-center space-x-2 min-w-0 flex-1" },
+                   Icon && React.createElement(Icon, { className: "h-4 w-4 flex-shrink-0" }),
+                   React.createElement("span", { className: "truncate" }, item.title)))));
+}
 
 interface SidebarProps {
   activeItem: string;
@@ -113,6 +185,7 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
   };
 
   const handleItemClick = (id: string, href?: string) => {
+    console.log("Sidebar item clicked:", id);
     onItemClick(id, href);
     // Close sidebar on mobile after selection
     if (window.innerWidth < 768) {
@@ -205,3 +278,4 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
 };
 
 export default Sidebar;
+
