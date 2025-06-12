@@ -1,7 +1,8 @@
 
 import { useState } from "react";
-import { ChevronDown, ChevronRight, Home, Settings, Book, Code, Database, Shield, Webhook, Users, Tag, Package, GraduationCap, Video, CheckSquare, ExternalLink } from "lucide-react";
+import { ChevronDown, ChevronRight, Home, Settings, Book, Code, Database, Shield, Webhook, Users, Tag, Package, GraduationCap, Video, CheckSquare, ExternalLink, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 interface SidebarItem {
   id: string;
@@ -94,9 +95,11 @@ const sidebarItems: SidebarItem[] = [
 interface SidebarProps {
   activeItem: string;
   onItemClick: (id: string, href?: string) => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-const Sidebar = ({ activeItem, onItemClick }: SidebarProps) => {
+const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set(["paradigm", "logical-model", "configuracoes", "api"]));
 
   const toggleExpanded = (id: string) => {
@@ -107,6 +110,14 @@ const Sidebar = ({ activeItem, onItemClick }: SidebarProps) => {
       newExpanded.add(id);
     }
     setExpandedItems(newExpanded);
+  };
+
+  const handleItemClick = (id: string, href?: string) => {
+    onItemClick(id, href);
+    // Close sidebar on mobile after selection
+    if (window.innerWidth < 768) {
+      onClose();
+    }
   };
 
   const renderSidebarItem = (item: SidebarItem, level: number = 0) => {
@@ -122,7 +133,7 @@ const Sidebar = ({ activeItem, onItemClick }: SidebarProps) => {
             if (hasChildren) {
               toggleExpanded(item.id);
             } else {
-              onItemClick(item.id, item.href);
+              handleItemClick(item.id, item.href);
             }
           }}
           className={cn(
@@ -163,11 +174,33 @@ const Sidebar = ({ activeItem, onItemClick }: SidebarProps) => {
   };
 
   return (
-    <aside className="w-80 border-r bg-sidebar p-4 overflow-y-auto">
-      <nav className="space-y-1">
-        {sidebarItems.map(item => renderSidebarItem(item))}
-      </nav>
-    </aside>
+    <>
+      {/* Mobile Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={onClose}
+        />
+      )}
+      
+      {/* Sidebar */}
+      <aside className={cn(
+        "fixed md:relative inset-y-0 left-0 z-50 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0",
+        isOpen ? "translate-x-0" : "-translate-x-full"
+      )}>
+        <div className="flex items-center justify-between p-4 border-b md:hidden">
+          <span className="font-semibold">Menu</span>
+          <Button variant="ghost" size="icon" onClick={onClose}>
+            <X className="h-5 w-5" />
+          </Button>
+        </div>
+        <div className="p-4 overflow-y-auto h-full">
+          <nav className="space-y-1">
+            {sidebarItems.map(item => renderSidebarItem(item))}
+          </nav>
+        </div>
+      </aside>
+    </>
   );
 };
 

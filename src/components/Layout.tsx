@@ -8,10 +8,19 @@ import ApiContent from "./content/ApiContent";
 
 const Layout = () => {
   const [activeItem, setActiveItem] = useState("domain-logic");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleItemClick = (id: string, href?: string) => {
     console.log("Navigation clicked:", { id, href });
     setActiveItem(id);
+  };
+
+  const handleMenuClick = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  const handleCloseSidebar = () => {
+    setSidebarOpen(false);
   };
 
   const renderContent = () => {
@@ -34,10 +43,15 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Header />
-      <div className="flex flex-1">
-        <Sidebar activeItem={activeItem} onItemClick={handleItemClick} />
-        <main className="flex-1 p-8 overflow-y-auto">
+      <Header onMenuClick={handleMenuClick} />
+      <div className="flex flex-1 relative">
+        <Sidebar 
+          activeItem={activeItem} 
+          onItemClick={handleItemClick}
+          isOpen={sidebarOpen}
+          onClose={handleCloseSidebar}
+        />
+        <main className="flex-1 p-4 md:p-8 overflow-y-auto">
           <div className="container max-w-none">
             {renderContent()}
           </div>
