@@ -185,7 +185,7 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
       
       {/* Sidebar */}
       <aside className={cn(
-        "fixed md:relative inset-y-0 left-0 z-50 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0 overflow-hidden",
+        "fixed md:relative inset-y-0 left-0 z-40 w-80 border-r bg-sidebar transform transition-transform duration-300 ease-in-out md:translate-x-0 overflow-hidden",
         isOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="flex items-center justify-between p-4 border-b md:hidden">
