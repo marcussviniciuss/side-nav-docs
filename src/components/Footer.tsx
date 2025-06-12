@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="flex items-center space-x-2">
           <Book className="h-4 w-4 text-muted-foreground" />
           <span className="text-sm text-muted-foreground">
-            Powered by GitBook
+            Powered by Carrinho Digital
           </span>
         </div>
         <div className="text-sm text-muted-foreground">
-          © 2024 Central de Ajuda - Docs. All rights reserved.
+          © 2024 Carrinho Digital. Todos os direitos reservados.
         </div>
       </div>
     </footer>

@@ -65,7 +65,7 @@ const sidebarItems: SidebarItem[] = [
           { id: "entrega", title: "Entrega", href: "/api/entrega" }
         ]
       },
-      { id: "elementor-forms", title: "Elementor Forms Cademi", href: "/elementor-forms" }
+      { id: "elementor-forms", title: "Elementor Forms Carrinho Digital", href: "/elementor-forms" }
     ]
   },
   {
