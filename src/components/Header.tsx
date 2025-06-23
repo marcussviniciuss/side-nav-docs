@@ -21,7 +21,7 @@ const Header = ({ onMenuClick }: HeaderProps) => {
             <span className="sr-only">Toggle menu</span>
           </Button>
           <img src="/favicon.ico" alt="Logo" width={30} height={60} />
-          <span className="text-lg font-semibold">Carrinho Digital - Docs</span>
+          <span className="text-lg font-semibold">Área de Membro - Docs</span>
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-4">

@@ -18,24 +18,24 @@ const ApiContent = () => {
       </div>
 
       <p className="text-lg text-muted-foreground mb-8">
-        Saiba como utilizar documentações de API em sua Carrinho Digital
+        Saiba como utilizar documentações de API em sua Área de Membro
       </p>
 
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-bold mb-4">Endpoint</h2>
           <p className="mb-4">
-            Use o seu domínio Carrinho Digital para acessar seu realm de consultas.
+            Use o seu domínio Área de Membro para acessar seu realm de consultas.
           </p>
           <p className="mb-4">
-            Seu endpoint terá o seguinte formato: <code className="bg-gray-100 px-2 py-1 rounded text-sm">https://(seu-subdominio).Carrinho Digital.com.br/api/v1</code>
+            Seu endpoint terá o seguinte formato: <code className="bg-gray-100 px-2 py-1 rounded text-sm">https://(seu-subdominio).Área de Membro.com.br/api/v1</code>
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold mb-4">Autenticação</h2>
           <p className="mb-4">
-            Para se autenticar você precisa antes criar uma Chave de API da sua Carrinho Digital.
+            Para se autenticar você precisa antes criar uma Chave de API da sua Área de Membro.
           </p>
           <p className="mb-4">
             Ela será comunicada em todas as requisições pelo header: <strong>Authorization: (sua-api-key)</strong>

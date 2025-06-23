@@ -6,7 +6,7 @@ const LojasPage = () => {
       <h1 className="text-4xl font-bold mb-6">🏬 Lojas</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Crie e gerencie múltiplas lojas na plataforma Carrinho Digital, cada uma com suas próprias configurações e produtos.
+        Crie e gerencie múltiplas lojas na plataforma Área de Membro, cada uma com suas próprias configurações e produtos.
       </p>
 
       <div className="space-y-8">

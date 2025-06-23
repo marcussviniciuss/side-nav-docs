@@ -3,43 +3,55 @@ import React from "react";
 const ReviewCheckoutPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">🛒 Review no checkout</h1>
-      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
+      <h1 className="text-4xl font-bold mb-6">👥 Alunos</h1>
+      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Gestão de Estudantes</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Veja como as avaliações aparecem durante o processo de checkout na plataforma Carrinho Digital.
+        Aprenda como gerenciar, acompanhar e dar suporte aos alunos matriculados em seus cursos.
       </p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Como Aparece</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">📱 Visualização</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Foto do usuário</li>
-                <li>Nome do avaliador</li>
-                <li>Nota em estrelas</li>
-                <li>Comentário da avaliação</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">📍 Localização</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Aparece próximo ao produto</li>
-                <li>Visível durante todo o checkout</li>
-                <li>Fácil visualização para o cliente</li>
-              </ul>
-            </div>
-          </div>
+          <h2 className="text-2xl font-semibold mb-4">Lista de Alunos</h2>
+          <p className="mb-4">
+            Visualize todos os seus alunos e suas informações:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Dados pessoais</strong> - Nome, email, telefone</li>
+            <li><strong>Cursos matriculados</strong> - Quais cursos o aluno possui</li>
+            <li><strong>Progresso</strong> - Percentual de conclusão</li>
+            <li><strong>Data de matrícula</strong> - Quando se inscreveu</li>
+            <li><strong>Último acesso</strong> - Atividade recente</li>
+          </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <h2 className="text-2xl font-semibold mb-4">Acompanhamento de Progresso</h2>
+          <p className="mb-4">
+            Monitore o desenvolvimento dos estudantes:
+          </p>
           <ul className="list-disc list-inside mb-4 text-gray-800">
-            <li>Mantenha as avaliações atualizadas</li>
-            <li>Priorize avaliações positivas</li>
-            <li>Exiba comentários relevantes</li>
+            <li><strong>Aulas assistidas</strong> - Conteúdo já consumido</li>
+            <li><strong>Tempo de estudo</strong> - Horas dedicadas ao curso</li>
+            <li><strong>Exercícios realizados</strong> - Atividades completadas</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Filtros e Busca</h2>
+          <p className="mb-4">
+            Organize sua base de alunos:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Filtro por curso</strong> - Alunos de cursos específicos</li>
+            <li><strong>Data de matrícula</strong> - Períodos específicos</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Relatórios de Alunos</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Exporte listas de alunos</li>
+            <li>Análise de engajamento</li>
           </ul>
         </section>
       </div>
@@ -48,10 +60,10 @@ const ReviewCheckoutPage = () => {
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
-          src="https://drive.google.com/file/d/1OZ2hxMjh9NA6WAetizbv_FoSVZSSS21Y/preview"
+          src="https://drive.google.com/file/d/1megDoYiwRwnWwWclO4ipxgICIijK2Bp7/preview"
           frameBorder="0"
           allowFullScreen
-          title="Vídeo de Review no checkout"
+          title="Vídeo de Gestão de Alunos"
         ></iframe>
       </div>
     </div>

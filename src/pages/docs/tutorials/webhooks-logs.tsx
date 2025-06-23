@@ -6,7 +6,7 @@ const WebhooksLogsPage = () => {
       <h1 className="text-4xl font-bold mb-6">🔗 Webhooks + Logs</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Configure webhooks e monitore logs para integrar e acompanhar eventos na plataforma Carrinho Digital.
+        Configure webhooks e monitore logs para integrar e acompanhar eventos na plataforma Área de Membro.
       </p>
 
       <div className="space-y-8">

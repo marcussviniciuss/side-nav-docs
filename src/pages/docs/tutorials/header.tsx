@@ -6,7 +6,7 @@ const HeaderPage = () => {
       <h1 className="text-4xl font-bold mb-6">🧩 Header</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Controle a navegação e acesse as principais funcionalidades da plataforma Carrinho Digital através do header.
+        Controle a navegação e acesse as principais funcionalidades da plataforma Área de Membro através do header.
       </p>
 
       <div className="space-y-8">

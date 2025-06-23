@@ -3,76 +3,87 @@ import React from "react";
 const AssinaturaCheckoutPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">🛒 Assinatura + Checkout</h1>
-      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
+      <h1 className="text-4xl font-bold mb-6">✅ Cursos - Aprovar Comentários</h1>
+      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Moderação de Conteúdo</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Aprenda a configurar assinaturas recorrentes e o processo de checkout na plataforma Carrinho Digital.
+        Aprenda como moderar, aprovar e gerenciar comentários dos alunos em seus cursos.
       </p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Criando uma Assinatura</h2>
+          <h2 className="text-2xl font-semibold mb-4">Sistema de Moderação</h2>
           <p className="mb-4">
-            Configure assinaturas para seus produtos:
+            O sistema de comentários permite:
           </p>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">📅 Recorrência</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Escolha a periodicidade da cobrança</li>
-                <li>Mensal, trimestral ou anual</li>
-                <li>Defina a data de vencimento</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">💰 Valores</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Valor da assinatura</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">🔗 Link de Checkout</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Geração automática do link de assinatura</li>
-                <li>Link único para cada plano</li>
-                <li>Fácil de copiar e compartilhar</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Como Funciona</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">Processo de Assinatura</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Cliente acessa o link de assinatura</li>
-                <li>Escolhe o plano desejado</li>
-                <li>Preenche os dados de pagamento</li>
-                <li>Confirma a assinatura</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">Cobranças Recorrentes</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Cobrança automática na data definida</li>
-                <li>Notificação por e-mail antes da cobrança</li>
-                <li>Comprovante enviado após cada pagamento</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
           <ul className="list-disc list-inside mb-4 text-gray-800">
-            <li>Ofereça diferentes opções de recorrência</li>
-            <li>Considere descontos para planos mais longos</li>
-            <li>Mantenha os clientes informados sobre as cobranças</li>
+            <li><strong>Moderação prévia</strong> - Comentários aguardam aprovação</li>
+            <li><strong>Filtros automáticos</strong> - Detecção de spam e conteúdo inadequado</li>
+            <li><strong>Notificações</strong> - Alertas quando há novos comentários</li>
+            <li><strong>Histórico completo</strong> - Registro de todas as ações</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Aprovando Comentários</h2>
+          <p className="mb-4">
+            Para aprovar comentários:
+          </p>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Acesse a seção "Comentários Pendentes"</li>
+            <li>Leia o comentário completo</li>
+            <li>Verifique se está relacionado ao conteúdo</li>
+            <li>Clique em "Aprovar" ou "Rejeitar"</li>
+            <li>Adicione uma nota interna se necessário</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Critérios de Aprovação</h2>
+          <p className="mb-4">
+            Aprove comentários que:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>São relevantes</strong> - Relacionados ao conteúdo da aula</li>
+            <li><strong>Agregam valor</strong> - Dúvidas, insights ou experiências</li>
+            <li><strong>São respeitosos</strong> - Linguagem adequada e cordial</li>
+            <li><strong>Seguem as regras</strong> - Não violam termos de uso</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Rejeitando Comentários</h2>
+          <p className="mb-4">
+            Rejeite comentários que contêm:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Spam</strong> - Links não relacionados ou propaganda</li>
+            <li><strong>Linguagem inadequada</strong> - Ofensas ou palavrões</li>
+            <li><strong>Conteúdo irrelevante</strong> - Não relacionado ao curso</li>
+            <li><strong>Informações falsas</strong> - Dados incorretos ou enganosos</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Respondendo Comentários</h2>
+          <p className="mb-4">
+            Ao aprovar, você pode:
+          </p>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Responder diretamente ao aluno</li>
+            <li>Esclarecer dúvidas apresentadas</li>
+            <li>Agradecer pelo feedback positivo</li>
+            <li>Direcionar para recursos adicionais</li>
+            <li>Fixar comentários importantes</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Configurações de Moderação</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Defina palavras-chave para filtro automático</li>
+            <li>Configure notificações por email</li>
+            <li>Estabeleça regras de participação</li>
+            <li>Crie respostas padrão para situações comuns</li>
           </ul>
         </section>
       </div>
@@ -81,10 +92,10 @@ const AssinaturaCheckoutPage = () => {
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
-          src="https://drive.google.com/file/d/1pKRM24VnCDEGkQxb7R1LO2ptziRQIu7U/preview"
+          src="https://drive.google.com/file/d/1gnZeXpQrOnt2F0CDSdTxjO9IAYtTx3kz/preview"
           frameBorder="0"
           allowFullScreen
-          title="Vídeo de Assinatura + Checkout"
+          title="Vídeo de Aprovar Comentários"
         ></iframe>
       </div>
     </div>

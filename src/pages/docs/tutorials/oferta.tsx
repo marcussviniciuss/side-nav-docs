@@ -3,66 +3,75 @@ import React from "react";
 const OfertaPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">🎁 Oferta</h1>
-      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
+      <h1 className="text-4xl font-bold mb-6">✏️ Cursos - Editar Curso</h1>
+      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Edição de Conteúdo</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Aprenda a criar ofertas especiais e gerar links de checkout para seus produtos.
+        Aprenda como editar e atualizar seus cursos existentes, modificando conteúdo, estrutura e configurações.
       </p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Criando uma Oferta</h2>
+          <h2 className="text-2xl font-semibold mb-4">Informações Básicas</h2>
           <p className="mb-4">
-            Crie ofertas especiais para seus produtos de pagamento único:
+            Edite as informações principais do seu curso:
           </p>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">📊 Configuração de Preços</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Defina o preço de custo do produto</li>
-                <li>Estabeleça o valor de venda da oferta</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">🔗 Link de Checkout</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Geração automática do link de pagamento</li>
-                <li>Link único para cada oferta</li>
-                <li>Fácil de copiar e compartilhar</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">📋 Tabela de Ofertas</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Visualize todas as suas ofertas ativas</li>
-                <li>Copie os links diretamente da tabela</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Como Usar</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">Compartilhamento</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Copie o link de checkout da tabela</li>
-                <li>Compartilhe em qualquer canal de comunicação</li>
-                <li>Cliente acessa diretamente a página de pagamento</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
           <ul className="list-disc list-inside mb-4 text-gray-800">
-            <li>Mantenha um registro dos preços de custo atualizados</li>
-            <li>Teste diferentes valores de oferta para encontrar o melhor resultado</li>
-            <li>Organize suas ofertas com nomes claros e descritivos</li>
+            <li><strong>Título do curso</strong> - Nome que aparece para os alunos</li>
+            <li><strong>Descrição</strong> - Resumo do que o curso oferece</li>
+            <li><strong>Categoria</strong> - Área de conhecimento do curso</li>
+            <li><strong>Nível</strong> - Iniciante, intermediário ou avançado</li>
+            <li><strong>Imagem de capa</strong> - Visual principal do curso</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Estrutura do Curso</h2>
+          <p className="mb-4">
+            Organize o conteúdo do seu curso:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Módulos</strong> - Divida o conteúdo em seções lógicas</li>
+            <li><strong>Aulas</strong> - Adicione, remova ou reordene aulas</li>
+            <li><strong>Materiais extras</strong> - PDFs, exercícios, recursos</li>
+            <li><strong>Duração estimada</strong> - Tempo necessário para cada seção</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Edição de Aulas</h2>
+          <p className="mb-4">
+            Para cada aula você pode modificar:
+          </p>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Título e descrição da aula</li>
+            <li>Vídeo principal (upload ou link)</li>
+            <li>Materiais complementares</li>
+            <li>Exercícios e questionários</li>
+            <li>Ordem de apresentação</li>
+            <li>Configurações de acesso</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Configurações Avançadas</h2>
+          <p className="mb-4">
+            Ajuste configurações específicas:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Preço</strong> - Valor único ou assinatura</li>
+            <li><strong>Acesso</strong> - Liberação progressiva ou total</li>
+            <li><strong>Certificado</strong> - Configurar emissão automática</li>
+            <li><strong>Fórum</strong> - Habilitar discussões entre alunos</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Publicação e Versioning</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Salve como rascunho para edições futuras</li>
+            <li>Publique alterações quando estiver pronto</li>
+            <li>Notifique alunos sobre atualizações importantes</li>
+            <li>Mantenha backup de versões anteriores</li>
           </ul>
         </section>
       </div>
@@ -71,10 +80,10 @@ const OfertaPage = () => {
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
-          src="https://drive.google.com/file/d/1SstSr66TcczR66ar1f8SYjdztSDaahTq/preview"
+          src="https://drive.google.com/file/d/15nOheGjwczvLfy9LT_cY2Fc8VF7pcUPj/preview"
           frameBorder="0"
           allowFullScreen
-          title="Vídeo de Oferta"
+          title="Vídeo de Editar Curso"
         ></iframe>
       </div>
     </div>

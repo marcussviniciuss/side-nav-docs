@@ -3,56 +3,47 @@ import React from "react";
 const VendasPt3Page = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">💰 Vendas - parte 3</h1>
-      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Continue aprendendo</h2>
+      <h1 className="text-4xl font-bold mb-6">🔗 Webhooks</h1>
+      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Integração Automática</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Visualize os detalhes do produto vendido através da aba de produto no modal.
+        Aprenda como configurar webhooks para automatizar processos e integrar com sistemas externos.
       </p>
 
       <div className="space-y-8">
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Detalhes do Produto</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">🖼️ Visualização</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Foto do produto</li>
-                <li>Nome do produto</li>
-                <li>Descrição completa</li>
-              </ul>
-            </div>
 
-            <div>
-              <h3 className="text-lg font-medium mb-2">📋 Informações</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Produto vendido</li>
-                <li>Detalhes da oferta</li>
-                <li>Valor da venda</li>
-              </ul>
-            </div>
-          </div>
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Configuração de Webhooks</h2>
+          <p className="mb-4">
+            Como configurar um webhook:
+          </p>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Defina a URL de destino</li>
+            <li>Selecione os eventos de interesse</li>
+            <li>Teste a conexão</li>
+          </ol>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Como Acessar</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">🔍 Visualização</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Abra o modal da venda</li>
-                <li>Selecione a aba de produto</li>
-                <li>Visualize todos os detalhes</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <h2 className="text-2xl font-semibold mb-4">Segurança</h2>
+          <p className="mb-4">
+            Proteja seus webhooks:
+          </p>
           <ul className="list-disc list-inside mb-4 text-gray-800">
-            <li>Verifique se o produto está correto</li>
-            <li>Confirme os detalhes da oferta</li>
-            <li>Mantenha as informações atualizadas</li>
+            <li><strong>Assinatura digital</strong> - Verificar autenticidade</li>
+            <li><strong>HTTPS obrigatório</strong> - Conexão criptografada</li>
+            <li><strong>Token de autenticação</strong> - Chave secreta</li>
+            <li><strong>Validação de origem</strong> - IP whitelist</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Monitoramento</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li>Log de todas as tentativas de envio</li>
+            <li>Status de entrega (sucesso/falha)</li>
+            <li>Reenvio automático em caso de falha</li>
+            <li>Alertas para webhooks com problemas</li>
+            <li>Histórico de eventos processados</li>
           </ul>
         </section>
       </div>
@@ -61,10 +52,10 @@ const VendasPt3Page = () => {
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
-          src="https://drive.google.com/file/d/1lCAjKshIY9bqWrYiR0EdLlgVVjgYa_Qk/preview"
+          src="https://drive.google.com/file/d/1kN6SHg0ZG4chKQzHxOFkmUGV6yrpbQKi/preview"
           frameBorder="0"
           allowFullScreen
-          title="Vídeo de Vendas - parte 3"
+          title="Vídeo de Webhooks"
         ></iframe>
       </div>
     </div>

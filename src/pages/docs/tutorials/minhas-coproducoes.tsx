@@ -3,55 +3,61 @@ import React from "react";
 const MinhasCoproducoesPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">🤝 Minhas co-produções</h1>
-      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
+      <h1 className="text-4xl font-bold mb-6">💰 Vendas</h1>
+      <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Gestão de Vendas</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Gerencie suas co-produções na plataforma Carrinho Digital.
+        Aprenda como acompanhar, analisar e otimizar suas vendas de cursos e produtos digitais.
       </p>
 
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Gerenciando Co-produções</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium mb-2">✅ Aceitação</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Receba convite via email</li>
-                <li>Revise os detalhes da co-produção</li>
-                <li>Aceite o convite para iniciar</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">🔄 Cancelamento</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Você pode cancelar a qualquer momento</li>
-                <li>Cancelamento é definitivo</li>
-                <li>Notifique o produtor principal</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Compartilhamento</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">🔗 Link de Venda</h3>
-              <ul className="list-disc list-inside mb-4 text-gray-800">
-                <li>Copie o link quando a co-produção estiver ativa</li>
-                <li>Compartilhe com sua audiência</li>
-                <li>Monitore as vendas realizadas</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Dicas Importantes</h2>
+          <h2 className="text-2xl font-semibold mb-4">Painel de Vendas</h2>
+          <p className="mb-4">
+            No painel de vendas você pode visualizar:
+          </p>
           <ul className="list-disc list-inside mb-4 text-gray-800">
-            <li>Mantenha o link atualizado</li>
-            <li>Monitore o desempenho das vendas</li>
+            <li><strong>Vendas recentes</strong> - Últimas transações realizadas</li>
+            <li><strong>Faturamento total</strong> - Receita acumulada</li>
+            <li><strong>Produtos mais vendidos</strong> - Ranking de performance</li>
+            <li><strong>Status dos pagamentos</strong> - Aprovados, pendentes, cancelados</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Análise de Performance</h2>
+          <p className="mb-4">
+            Acompanhe métricas importantes:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Taxa de conversão</strong> - Visitantes que se tornaram clientes</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Detalhes das Transações</h2>
+          <p className="mb-4">
+            Para cada venda você pode ver:
+          </p>
+          <ol className="list-decimal list-inside mb-4 text-gray-800">
+            <li>Dados do comprador</li>
+            <li>Produto adquirido</li>
+            <li>Valor pago</li>
+            <li>Método de pagamento</li>
+            <li>Data e hora da transação</li>
+            <li>Status do pagamento</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Filtros e Relatórios</h2>
+          <p className="mb-4">
+            Organize suas vendas usando:
+          </p>
+          <ul className="list-disc list-inside mb-4 text-gray-800">
+            <li><strong>Período</strong> - Filtrar por datas específicas</li>
+            <li><strong>Produto</strong> - Vendas de cursos específicos</li>
+            <li><strong>Status</strong> - Aprovadas, pendentes, canceladas</li>
+            <li><strong>Método de pagamento</strong> - PIX, cartão, boleto</li>
           </ul>
         </section>
       </div>
@@ -60,10 +66,10 @@ const MinhasCoproducoesPage = () => {
       <div className="w-full max-w-4xl aspect-video">
         <iframe
           className="w-full h-full rounded-md shadow-lg"
-          src="https://drive.google.com/file/d/1vWzem1NV6F1MOj9t2h7fmgRicFcxr6Kl/preview"
+          src="https://drive.google.com/file/d/1FKC60OyuPLvjkelNhSHTKPp9N2b2mnZV/preview"
           frameBorder="0"
           allowFullScreen
-          title="Vídeo de Minhas co-produções"
+          title="Vídeo de Vendas"
         ></iframe>
       </div>
     </div>

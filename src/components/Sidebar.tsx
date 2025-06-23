@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronRight, Home, Settings, Book, Code, Database, Shield, Webhook, Users, Tag, Package, GraduationCap, Video, CheckSquare, ExternalLink, X } from "lucide-react";
+import { ChevronDown, ChevronRight, ExternalLink, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -14,143 +14,109 @@ interface SidebarItem {
 
 const sidebarItems: SidebarItem[] = [
   {
-    id: "overview",
-    title: "🏠 Visão Geral",
-    href: "/overview"
-  },
-  {
     id: "cadastro-login",
-    title: "📝 Cadastro e Login",
+    title: "🔐 Login e Registro",
     href: "/docs/tutorials/cadastro-login"
   },
   {
     id: "perfil-usuario",
-    title: "👤 Perfil de Usuário",
+    title: "📊 Dashboard",
     href: "/docs/tutorials/perfil-usuario"
   },
   {
     id: "criando-produto",
-    title: "📦 Criando um Produto",
+    title: "📚 Cursos - Meus Cursos",
     href: "/docs/tutorials/criando-produto"
   },
   {
     id: "oferta",
-    title: "🎁 Oferta",
+    title: "✏️ Cursos - Editar Curso",
     href: "/docs/tutorials/oferta"
   },
   {
     id: "assinatura-checkout",
-    title: "🛒 Assinatura + Checkout",
+    title: "✅ Cursos - Aprovar Comentários",
     href: "/docs/tutorials/assinatura-checkout"
   },
   {
     id: "descontos",
-    title: "💸 Descontos",
+    title: "🏪 Lojas - Criar Loja",
     href: "/docs/tutorials/descontos"
   },
   {
     id: "pixels",
-    title: "📡 Pixels",
+    title: "🏬 Lojas - Minhas Lojas",
     href: "/docs/tutorials/pixels"
   },
   {
     id: "orderbump",
-    title: "🎯 OrderBump",
+    title: "🎓 Certificados",
     href: "/docs/tutorials/orderbump"
   },
   {
     id: "review",
-    title: "⭐ Review",
+    title: "📈 Relatórios",
     href: "/docs/tutorials/review"
   },
   {
     id: "review-checkout",
-    title: "🛒 Review no checkout",
+    title: "👥 Alunos",
     href: "/docs/tutorials/review-checkout"
   },
   {
     id: "convite-coprodutor",
-    title: "🤝 Convite co-produtor (Visão produtor)",
+    title: "📺 Live",
     href: "/docs/tutorials/convite-coprodutor"
   },
   {
     id: "minhas-coproducoes",
-    title: "🤝 Minhas co-produções (Visão co-produtor)",
+    title: "💰 Vendas",
     href: "/docs/tutorials/minhas-coproducoes"
   },
   {
     id: "vendas-pt1",
-    title: "💰 Vendas - parte 1",
+    title: "💳 Gateway",
     href: "/docs/tutorials/vendas-pt1"
   },
   {
     id: "vendas-pt2",
-    title: "💰 Vendas - parte 2",
+    title: "📄 Faturas",
     href: "/docs/tutorials/vendas-pt2"
   },
   {
     id: "vendas-pt3",
-    title: "💰 Vendas - parte 3",
+    title: "🔗 Webhooks",
     href: "/docs/tutorials/vendas-pt3"
   },
   {
     id: "vendas-pt4",
-    title: "💰 Vendas - parte 4",
+    title: "🌐 Configurações Domínios",
     href: "/docs/tutorials/vendas-pt4"
   },
   {
     id: "recuperacao-assinaturas",
-    title: "🔄 Recuperação e Assinaturas",
+    title: "👤 Meu Perfil",
     href: "/docs/tutorials/recuperacao-assinaturas"
   },
   {
     id: "financas-saque",
-    title: "💵 Finanças (Saque)",
+    title: "🔑 Redefinir Senha",
     href: "/docs/tutorials/financas-saque"
   },
   {
     id: "indique-ganhe",
-    title: "🎁 Indique e Ganhe",
+    title: "🔐 Redefinir Senha",
     href: "/docs/tutorials/indique-ganhe"
   },
   {
-    id: "indique-ganhe-saque",
-    title: "💰 Indique e Ganhe (Saque)",
-    href: "/docs/tutorials/indique-ganhe-saque"
-  },
-  {
-    id: "webhooks-logs",
-    title: "🔗 Webhooks + Logs",
-    href: "/docs/tutorials/webhooks-logs"
-  },
-  {
-    id: "assistente",
-    title: "🧑‍💻 Assistente",
-    href: "/docs/tutorials/assistente"
-  },
-  {
-    id: "dashboard",
-    title: "📊 Dashboard",
-    href: "/docs/tutorials/dashboard"
-  },
-  {
-    id: "lojas",
-    title: "🏬 Lojas",
-    href: "/docs/tutorials/lojas"
-  },
-  {
-    id: "header",
-    title: "🧩 Header",
-    href: "/docs/tutorials/header"
-  },
-  {
     id: "tutoriaisExternos",
-    title: "Ir para a Carrinho Digital",
+    title: "Ir para a Área de Membro",
     icon: ExternalLink,
-    href: "https://carrinhodigital.com",
+    href: "https://areademembro.com.br",
     className: "text-blue-500 hover:text-blue-600"
   }
 ];
+
 interface SidebarProps {
   activeItem: string;
   onItemClick: (id: string, href?: string) => void;
@@ -177,7 +143,6 @@ const Sidebar = ({ activeItem, onItemClick, isOpen, onClose }: SidebarProps) => 
       return;
     }
     onItemClick(id, href);
-    // Close sidebar on mobile after selection
     if (window.innerWidth < 768) {
       onClose();
     }

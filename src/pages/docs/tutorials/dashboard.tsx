@@ -6,7 +6,7 @@ const DashboardPage = () => {
       <h1 className="text-4xl font-bold mb-6">📊 Dashboard</h1>
       <h2 className="text-sm font-semibold text-pink-600 uppercase mb-2">Comece por aqui</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Visualize métricas importantes e acompanhe o desempenho do seu negócio na plataforma Carrinho Digital.
+        Visualize métricas importantes e acompanhe o desempenho do seu negócio na plataforma Área de Membro.
       </p>
 
       <div className="space-y-8">
